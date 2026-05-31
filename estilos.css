@@ -1,0 +1,425 @@
+
+*{
+    margin: 0;
+    padding: 0;
+
+/* cuerpo */
+}
+body{
+    background-color: #222;
+    color: #fff;
+    font-family: Poopins, Oswald;
+    /* tamaño de fuente */
+    font-size: 14px;  
+    /* peso de fuente */
+    font-weight: 200;
+    padding: 20px 70px;
+
+}
+
+nav{
+    position: fixed;    
+    top: 0;
+    left: 0;
+    right: 0;   
+    width: 100%;
+    z-index: 1000;
+    text-align: center;
+    background-color: #111;
+    padding: 10px 0;
+    border-radius: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-family: 'Times New Roman', sans-serif;
+    transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+nav:hover{
+    border-color: #0ec6f4; /* Cambia al color de tu marca al pasar el mouse */
+    box-shadow: inset 0 0 20px rgba(14, 198, 244, 0.5);
+}
+nav ul{
+    list-style: none;
+    display: inline-block;
+}
+
+nav li{
+    float: left;
+    margin: 0 15px;
+}
+
+nav li:hover{
+    color: #03bdfb;
+}
+
+nav a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 15px;
+    font-family: 'Times New Roman', sans-serif;
+}
+
+.fa-android {
+    margin-left: 15px; /* Ajústalo a 5px, 15px o lo que más te guste */
+}
+
+/* parte 1 */
+#parte_1{
+    
+    color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    padding-bottom: 30px;
+
+    background-image : url("imagenes/portada.png");
+    background-size: cover;
+    background-position: top center;
+    background-repeat: no-repeat;
+
+    margin-left: -70px;
+    margin-right: -70px;
+    padding-left: 70px;
+    padding-right: 70px;
+
+    border-radius: 0;
+    margin-top: 30px;
+
+    scroll-margin-top: 80px; 
+
+}
+
+#segundo_texto{
+    color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    padding-bottom: 30px;
+}
+
+.portada{
+    background-color: rgba(0, 0, 0, 0.7); /* negro 50% transparente */
+    padding: 20px;
+    border-radius: 10px;
+    display: inline-block;
+    transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.portada:hover{
+    transform: scale(1.05); 
+    border-color: #0ec6f4; /* Cambia al color de tu marca al pasar el mouse */
+    box-shadow: 0 0 20px rgba(14, 198, 244, 0.5);
+}
+
+.titulo{
+    color: #03bdfb;
+    font-size: 40px;
+
+}
+
+/* imagen de perfil  */
+.parte_2{
+    display: grid;
+    grid-template-columns: 250px 1fr;
+    align-items: center;
+    flex-wrap: nowrap;
+    gap: 20px;
+    scroll-margin-top: 80px; 
+}
+
+.parte_2 img{
+    width: 200px;
+    height: 200px;
+    border-radius: 10%;
+    border: 2px solid #fff;
+    object-fit: cover;
+    margin-top: 20px; 
+    margin-bottom: 20px; 
+    cursor: pointer;
+    flex-shrink: 0;
+    transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+    
+}
+.parte_2 p{
+    padding-top: 20px;
+    flex: 1;
+    margin: 0;
+    padding-bottom: 30px;
+}
+
+.parte_2 img:hover {
+    transform: scale(1.05); 
+    border-color: #0ec6f4; /* Cambia al color de tu marca al pasar el mouse */
+    box-shadow: 0 0 20px rgba(14, 198, 244, 0.5); /* Sombra difusa con tu color */
+}
+
+/* SERVICIOS */
+/* contenedor crea las dos columnas */
+.tarjetas{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+    border-top: 1px solid #0ec6f4;
+    border-bottom: 1px solid #0ec6f4;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    
+    margin-left: -70px;
+    margin-right: -70px;
+
+    /*  Devolvemos las tarjetas blancas a su posición original para que no se peguen a la pantalla */
+    padding-left: 70px;
+    padding-right: 70px;
+    scroll-margin-top: 80px; 
+}
+
+/* cada tarjeta */
+.card{
+    background-color: #fffbfb;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    padding: 20px;
+    transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+}
+/* titulo de la tarjeta */
+.card h3{
+    font-size: 15px;
+    font-weight: 600;
+    color: #111111;
+    margin-bottom: 8px;
+}
+/* texto de la tarjeta */
+.card p{
+    font-size: 13px;
+    color: #666666;
+    line-height: 1.6;
+    margin-bottom: 0;
+}
+
+.card img{
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    display: block;
+}
+
+.card:hover{
+    transform: scale(1.05); 
+    border-color: #0ec6f4; /* Cambia al color de tu marca al pasar el mouse */
+    box-shadow: 0 0 20px rgba(14, 198, 244, 0.5);
+}
+
+
+.video-container{
+    position: relative;
+    z-index: 1;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+    border-radius: 10px;
+
+    max-width: 800px;
+    margin: 40px auto;
+    width: 90%;
+    transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+
+}
+
+.video-container iframe{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.video-container:hover{
+    transform: scale(1.05); 
+    border-color: #0ec6f4; /* Cambia al color de tu marca al pasar el mouse */
+    box-shadow: 0 0 20px rgba(14, 198, 244, 0.5);
+}
+
+.separador {
+    height: 1px;
+    background-color: #0ec6f4;
+    margin-left: -70px;
+    margin-right: -70px;
+    margin-bottom: 20px;
+    
+}
+
+/* experiencia */
+#experiencia{
+    color: #ffffff;
+    font-size: 20px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    scroll-margin-top: 80px; 
+}  
+
+#experiencia h6{
+
+        font-size: 12px;
+        color: #0ec6f4 ;
+}
+
+
+/* Educación */
+.Educación{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    border-top: 1px solid #0ec6f4;
+    border-bottom: 1px solid #0ec6f4;
+    padding-top: 30px;
+    padding-bottom: 30px;
+
+    margin-left: -70px;
+    margin-right: -70px;
+
+    padding-left: 70px;
+    padding-right: 70px;
+    scroll-margin-top: 80px; 
+}
+
+
+/* Habilidades */
+/* titulo de sección */
+.habilidad {
+    font-size: 11px;
+    font-weight:500;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: #03bdfb;
+    margin-bottom: 16px;
+    margin-top: 30px;
+    scroll-margin-top: 80px; 
+    
+
+}
+
+
+/* contenedor de pill */
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding-bottom: 30px;
+    
+
+}
+
+/* cada pill */
+.skill-pill {
+    font-size: 13px;
+    font-weight: 500;
+    color: #dddddd;
+    padding: 8px 16px;
+    border: 1px solid #555555;
+    border-radius: 999px;
+    background: transparent;
+    text-decoration: none;
+}
+
+/* cada pill */
+.skill-pill:hover {
+    padding: 10px 16px;
+    background: #9494944a;
+    cursor: pointer;
+}
+
+/* contacto */
+.contacto{
+    background-color: #03bdfb;
+    margin-left: -70px;
+    margin-right: -70px;
+    margin-bottom: -70px;
+
+    padding-top: 20px;
+    padding-bottom: 60px;
+    padding-left: 70px;
+}
+
+.contact-form{
+    display: grid;
+    grid-template-columns: 150px 350px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.contact-form label{
+    font-weight: 700;
+    color: #111;
+}
+
+.contact-form input, .contact-form textarea{
+    border-radius: 5px;
+    border: 2px solid #111;
+}
+
+input[type="submit"]{
+    background-color: #111;
+    color: #03bdfb;
+    padding: 10px;
+    grid-column: 2 / 3; 
+    justify-self: end;
+    
+}
+
+/* input[type="submit"]:hover{
+    cursor: pointer;
+    background: transparent;
+    border: 1px solid #555555;
+} */
+
+@media (max-width: 768px) {
+    body {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    /* Cambiar tarjetas y educación a 1 columna */
+    .tarjetas, .Educación {
+        grid-template-columns: 1fr;
+    }
+
+    /* Ajustar imagen de perfil y texto sobre mí */
+    .parte_2 {
+        display: grid;
+        grid-template-columns: 1fr;
+        text-align: center;
+        justify-items: center;
+    }
+
+    .parte_2 img{
+        margin: 0 auto;
+    }
+
+    /* Ajustar el formulario de contacto */
+    .contact-form {
+        grid-template-columns: 1fr;
+        gap: 5px;
+    }
+    
+    /* Quitar margenes negativos que rompen el diseño en móvil */
+    #parte_1, .tarjetas, .Educación, .contacto {
+        margin-left: -20px !important;
+        margin-right: -20px !important;
+        padding-left: 20px !important;
+        padding-right: 20px !important;
+    }
+}
+
+.footer{
+    padding-top: 50px;
+    text-align: center;
+    padding: 16px;
+    background: #111;
+    color: #ffffff;
+    font-size: 12px;
+    border-top: 2px solid #03bdfb;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    
+}
+
